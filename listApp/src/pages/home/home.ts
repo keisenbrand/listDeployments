@@ -4,6 +4,8 @@ import { NavParams, NavController } from 'ionic-angular';
 
 import { UshahidiApi } from '../../providers/ushahidi-api';
 
+import { DatabaseService } from '../../providers/database-service';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
