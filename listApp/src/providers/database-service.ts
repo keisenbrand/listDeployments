@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { SQLite } from 'ionic-native';
+import { Platform } from 'ionic-angular';
 
 /*
   Generated class for the DatabaseService provider.
