@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color ="dark">
+    <ion-title>
+      Ushahidi Deployments
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="deployments">
+	<div *ngIf="site">
+		<div class="header" *ngIf="site.name">
+			<h4 text-center padding-top padding-bottom>{{site.name}}</h4>
+		</div>
+		<div class="image" *ngIf="site.image_header">
+			<img padding [src]="placeholder">
+		</div>
+		<p padding-left padding-right *ngIf="site.description">{{site.descriptoin}}</p>
+		<div padding-top padding-left padding-right padding-bottom margin-bottom>
+			//button
+		</div>
+		<ion-list>
+	        <ion-item detail-push>
+	        	Responses
+	        </ion-item>
+	        <ion-item detail-push>
+	        	Collections
+	        </ion-item>
+	        <ion-item detail-push>
+	        	Settings
+	        </ion-item>
+	    </ion-list>
+	</div>
+</ion-content>
